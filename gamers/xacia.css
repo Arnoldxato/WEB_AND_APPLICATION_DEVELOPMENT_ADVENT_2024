@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+body {
+    font-family: Protest Strike, sans-serif;
+    background: #2d2d2d;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+#loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2d2d2d;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: opacity 0.8s ease;
+    z-index: 10;
+}
+.instructions {
+    max-width: 400px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+#start-button {
+    background: #8c52ff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#start-button:hover {
+    background: #a64dff;
+}
+.game-container {
+    text-align: center;
+    max-width: 400px;
+}
+h1 {
+    font-size: 5em;
+    color: #8783d1;
+    text-shadow: 0px 0px 8px #e0aaff;
+}
+#word-display {
+    font-size: 1.8em;
+    color: #AA9ABA;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+    border: 3px dashed #ffaec0;
+    border-radius: 10px;
+    animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+    0% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(-5px); }
+}
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+}
+button {
+    background:#BFA4A4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+button:hover {
+    background: #D1ABAD;
+}
+.score {
+    font-size: 1.2em;
+    color: #E3B9BC;
+    margin-top: 10px;
+}

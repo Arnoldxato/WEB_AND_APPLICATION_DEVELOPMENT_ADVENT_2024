@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XATO Game</title>
+    <link rel="stylesheet" href="xacia.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="instructions">
+            <h2>Welcome to the XATO'S Game!</h2>
+            <p>Unscramble the letters to guess the correct word. Earn 10 points for each correct answer!</p>
+            <button id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container" id="game-container" style="display: none;">
+        <h1>XATO'S Game</h1>
+        <div id="word-display"></div>
+        <input type="text" id="guess-input" placeholder="Type your guess...">
+        <button id="submit-button">Submit</button>
+        <div class="score">Score: <span id="score">0</span></div>
+    </div>
+
+    <script src="xato.js"></script>
+</body>
+</html>
