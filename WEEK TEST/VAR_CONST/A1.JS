@@ -1,0 +1,1 @@
+//Variables are like containers that are used to c while constantS in javascript are
